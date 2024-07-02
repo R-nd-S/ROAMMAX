@@ -6,3 +6,22 @@ body {
   background: url("img/input_image2.png") no-repeat;
   background-size: cover;
 }
+h1,
+p {
+  position: absolute;
+  left: 35%;
+  right: 55%;
+}
+h1 {
+  top: 30%;
+  font-size: 120px;
+}
+p {
+  top: 60%;
+  font-size: 30px;
+}
+#topLeftLogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
