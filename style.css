@@ -41,3 +41,31 @@ body {
     background-clip: text;
     text-fill-color: transparent;
 }
+.topBarText {
+  position: absolute;
+  top: 2%;
+  font-size: 20px;
+  background: linear-gradient(to right, rgba(139, 52, 46, 0.8), rgba(243, 171, 64, 0.8)); /* red to orange with 50% transparency */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+#topBarText1 {
+  right: 24%;
+}
+#topBarText2 {
+  right: 14%;
+}
+#topBarText3 {
+  right: 4%;
+}
+#topBarWhiteBackground {
+  background-color: rgb(255, 255, 255, 0.1); /* red to orange with 50% transparency */
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  width: 34%;
+  height: 14%;
+  border-radius: 14px;
+}
