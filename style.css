@@ -55,7 +55,7 @@ body {
   text-fill-color: transparent;
 }
 #topBarText1 {
-  right: 24%;
+  right: 23%;
 }
 #topBarText2 {
   right: 14%;
@@ -90,4 +90,31 @@ body {
   text-fill-color: transparent;
   /* display: none; @#
   visibility: hidden;
+} */
+ .dropdown-content {
+  position: absolute;
+   right: 12%;
+   top: 8%;
+   border: 2px solid #8b342e;
+   padding: 2px;
+   background-color: rgb(255, 255, 255, 0.3);
+}
+
+
+.dropdown-content * {
+  font-size: 14px;
+  background: linear-gradient(to right, rgba(139, 52, 46, 0.8), rgba(243, 171, 64, 0.8)); /* red to orange with 50% transparency */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  /*color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;*/
+}
+
+/*
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 } */
