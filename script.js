@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 function testPrint(){
   console.log("TestPrint()")
 }
@@ -55,4 +56,5 @@ mainButton.addEventListener('mouseover', () => {
 mainButton.addEventListener('mouseout', () => {
   mainButton.style.background = 'rgba(255, 255, 255, 0.2)';
   gradientFill();
+});
 });
