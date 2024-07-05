@@ -1,7 +1,14 @@
 function testPrint(){
   console.log("TestPrint()")
 }
-const signedIn = "Start creating"
+const params = new URLSearchParams(window.location.search); //parse params
+const p = params.get("mainButtonText"); //get p param
+console.log(p)
+if(p==null){
+  var signedIn = "Sign-in/up";
+}else{
+  var signedIn = p;
+}
 const mainButton = document.querySelector("#mainTextButton");
 if(mainButton.textContent==signedIn){
   console.log("")
