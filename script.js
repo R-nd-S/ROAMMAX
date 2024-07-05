@@ -12,12 +12,15 @@ const changeText = document.querySelector("#topBarText1");
 const dropDownBox = document.querySelector("#dropDown");
 dropDownBox.style.display = "none";
 
-changeText.addEventListener("click", function() {
-  if (changeText.textContent === "Contact-us ▶") {
-    changeText.textContent = "Contact-us ▼";
-    dropDownBox.style.display = "block";  // Show the dropdown
-  } else {
-    changeText.textContent = "Contact-us ▶";
-    dropDownBox.style.display = "none";  // Hide the dropdown
-  }
-});
+// changeText.textContent = "Contact-us ▶";
+// dropDownBox.style.display = "none";  // Hide the dropdown
+
+// changeText.addEventListener("click", function() {
+//   if (changeText.textContent === "Contact-us ▶") {
+//     changeText.textContent = "Contact-us ▼";
+//     dropDownBox.style.display = "block";  // Show the dropdown
+//   } else {
+//     changeText.textContent = "Contact-us ▶";
+//     dropDownBox.style.display = "none";  // Hide the dropdown
+//   }
+// });
