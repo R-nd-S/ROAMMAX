@@ -24,3 +24,7 @@ dropDownBox.style.display = "none";
 //     dropDownBox.style.display = "none";  // Hide the dropdown
 //   }
 // });
+
+ function refresh(){
+    window.location.href="https://r-nd-s.github.io/ROAMMAX"
+ }
