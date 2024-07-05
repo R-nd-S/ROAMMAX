@@ -57,4 +57,10 @@ mainButton.addEventListener('mouseout', () => {
   mainButton.style.background = 'rgba(255, 255, 255, 0.2)';
   gradientFill();
 });
+  // Retrieve
+  const loggedInBoolien = localStorage.loggenIn;
+  // alert(loggedInBoolien);
+  if(loggedInBoolien==true){
+    window.location.href="https://r-nd-s.github.io/ROAMMAX/#"
+  }
 });
