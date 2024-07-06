@@ -3,14 +3,14 @@ function testPrint(){
   console.log("TestPrint()")
 }
 function gradientFill() {
-  const mainButton = document.querySelector("#mainTextButton");
+  const mainButtonText = document.querySelector("#mainTextButtonText");
   
-  mainButton.style.background = "linear-gradient(to right, rgba(139, 52, 46, 0.8), rgba(243, 171, 64, 0.8))";
-  mainButton.style.setProperty('-webkit-background-clip', 'text');
-  mainButton.style.setProperty('-webkit-text-fill-color', 'transparent');
-  mainButton.style.setProperty('background-clip', 'text');
-  mainButton.style.setProperty('text-fill-color', 'transparent');
-  mainButton.computedStyleMap.background = "rgb(255, 255, 255, 0.2)";
+  mainButtonText.style.background = "linear-gradient(to right, rgba(139, 52, 46, 0.8), rgba(243, 171, 64, 0.8))";
+  mainButtonText.style.setProperty('-webkit-background-clip', 'text');
+  mainButtonText.style.setProperty('-webkit-text-fill-color', 'transparent');
+  mainButtonText.style.setProperty('background-clip', 'text');
+  mainButtonText.style.setProperty('text-fill-color', 'transparent');
+  mainButtonText.computedStyleMap.background = "rgb(255, 255, 255, 0.2)";
 }
 
 const params = new URLSearchParams(window.location.search); //parse params
@@ -21,11 +21,12 @@ if(p==null){
 }else{
   var signedIn = p;
 }
+const mainButtonText = document.querySelector("#mainTextButtonText");
 const mainButton = document.querySelector("#mainTextButton");
-if(mainButton.textContent==signedIn){
+if(mainButtonText.textContent==signedIn){
   console.log("")
 }else{
-   mainButton.textContent=signedIn;
+     mainButtonText.textContent=signedIn;
   gradientFill()
 }
 const changeText = document.querySelector("#topBarText1");
