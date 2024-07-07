@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
 function testPrint(){
   console.log("TestPrint()")
 }
+function refresh(){
+    window.location.href="https://r-nd-s.github.io/ROAMMAX"
+ }
 function gradientFill() {
   const mainButtonText = document.querySelector("#mainTextButtonText");
   
@@ -15,22 +18,22 @@ function gradientFill() {
 
 const params = new URLSearchParams(window.location.search); //parse params
 const p = params.get("mainButtonText"); //get p param
-console.log(p)
+const mainButtonText = document.querySelector("#mainTextButtonText");
+const mainButton = document.querySelector("#mainTextButton");
+const changeText = document.querySelector("#topBarText1");
+const dropDownBox = document.querySelector("#dropDown");
 if(p==null){
   var signedIn = "Sign-in/up";
 }else{
   var signedIn = p;
 }
-const mainButtonText = document.querySelector("#mainTextButtonText");
-const mainButton = document.querySelector("#mainTextButton");
 if(mainButtonText.textContent==signedIn){
   console.log("")
 }else{
      mainButtonText.textContent=signedIn;
   gradientFill()
 }
-const changeText = document.querySelector("#topBarText1");
-const dropDownBox = document.querySelector("#dropDown");
+
 dropDownBox.style.display = "none";
 
 // changeText.textContent = "Contact-us ▶";
@@ -46,9 +49,6 @@ dropDownBox.style.display = "none";
 //   }
 // });
 
- function refresh(){
-    window.location.href="https://r-nd-s.github.io/ROAMMAX"
- }
 mainButton.addEventListener('mouseover', () => {
   mainButton.style.background = 'rgba(255, 255, 255, 0.4)';
   gradientFill();
