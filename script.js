@@ -1,4 +1,6 @@
+alert("ok");
 document.addEventListener('DOMContentLoaded', function () {
+  alert("dom passed");
 function testPrint(){
   console.log("TestPrint()")
 }
