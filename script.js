@@ -13,7 +13,7 @@ function gradientFill() {
   mainButtonText.style.setProperty('-webkit-text-fill-color', 'transparent');
   mainButtonText.style.setProperty('background-clip', 'text');
   mainButtonText.style.setProperty('text-fill-color', 'transparent');
-  mainButtonText.computedStyleMap.background = "rgb(255, 255, 255, 0.2)";
+  //mainButtonText.style.background = "rgb(255, 255, 255, 0.2)";
 }
 function adjustStyles(){
   console.log('adjustStyles()')
