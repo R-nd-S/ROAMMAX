@@ -20,13 +20,29 @@ function adjustStyles(){
   if (window.outerWidth <= 932) {
       const mainText = document.getElementById('mainText');
       const mainTextButton = document.getElementById('mainTextButton');
+      const topBarText = document.getElementsByClassName('topBarText');
+    const topBarBackground = document.getElementById('topBarWhiteBackground');
+    const topBarId3 = document.getElementById('topBarText3');
 
       if (window.outerWidth <= 374) {
+         //main text/button
           mainText.style.setProperty('font-size', "56px");
           mainTextButton.style.setProperty('font-size', "50px");
           mainTextButton.style.setProperty('left', '15%');
           mainText.style.setProperty('left', '2%');
           mainText.style.setProperty('top', '44%');
+         //top bar text
+          // topBarBackground.style.setProperty('width', '34%');
+          // topBarId3.style.setProperty('width', '34%');
+          for (let i = 0; i < topBarText.length; i++) {
+             topBarText[i].style.setProperty('position', 'absolute');
+            topBarText[i].style.setProperty('font-size', '20px');
+            const val = ((i + 1) * 16)-13;
+            const vall = val + "px"
+            topBarText[i].style.setProperty('top', vall);
+            topBarText[i].style.setProperty('right', '16px');
+            console.log(topBarText[i].style.right);
+            }
       } else if (window.outerWidth <= 424) {
           mainText.style.setProperty('font-size', "58px");
           mainTextButton.style.setProperty('font-size', "50px");
@@ -52,6 +68,12 @@ function adjustStyles(){
         mainText.style.setProperty('left', '14%');
         mainText.style.setProperty('top', '34%');
     }
+    if(window.innerWidth<=827){
+      topLeftLogo.src = "img/image-rsmidk (1) (1).png";
+      document.getElementById('topBarWhiteBackground').style.width = "50%";
+      document.getElementById('topBarWhiteBackground').style.right = "0%";  
+      document.getElementById('topBarText3').style.right = "4%";
+    }
   }
 }
 
@@ -73,13 +95,6 @@ if(mainButtonText.textContent==signedIn){
 }else{
      mainButtonText.textContent=signedIn;
   gradientFill()
-}
-
-if(window.innerWidth<=827){
-  topLeftLogo.src = "img/image-rsmidk (1) (1).png";
-  document.getElementById('topBarWhiteBackground').style.width = "50%";
-  document.getElementById('topBarWhiteBackground').style.right = "0%";  
-  document.getElementById('topBarText3').style.right = "4%";
 }
 
 dropDownBox.style.display = "none";
