@@ -21,8 +21,10 @@ function adjustStyles(){
       const mainText = document.getElementById('mainText');
       const mainTextButton = document.getElementById('mainTextButton');
       const topBarText = document.getElementsByClassName('topBarText');
-    const topBarBackground = document.getElementById('topBarWhiteBackground');
-    const topBarId3 = document.getElementById('topBarText3');
+      const topBarBackground = document.getElementById('topBarWhiteBackground');
+      const topBarId1 = document.getElementById('topBarText1');
+      const topBarId2 = document.getElementById('topBarText2');
+      const topBarId3 = document.getElementById('topBarText3');
 
       if (window.outerWidth <= 374) {
          //main text/button
@@ -83,6 +85,7 @@ function adjustStyles(){
         mainTextButton.style.setProperty('left', '24%');
         mainText.style.setProperty('left', '14%');
         mainText.style.setProperty('top', '40%');
+        topBarId1.style.setProperty('right', '32%');                           topBarId2.style.setProperty('right', '20%');                           topBarId3.style.setProperty('width', '10%');
     } else{
         mainText.style.setProperty('font-size', "800%");
         mainTextButton.style.setProperty('font-size', "400%");
