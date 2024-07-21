@@ -32,15 +32,15 @@ function adjustStyles(){
           mainText.style.setProperty('left', '2%');
           mainText.style.setProperty('top', '44%');
          //top bar text
-          // topBarBackground.style.setProperty('width', '34%');
-          // topBarId3.style.setProperty('width', '34%');
+          topBarBackground.style.setProperty('width', '34%');
+          topBarId3.style.setProperty('width', '28%');
           for (let i = 0; i < topBarText.length; i++) {
              topBarText[i].style.setProperty('position', 'absolute');
             topBarText[i].style.setProperty('font-size', '20px');
             const val = ((i + 1) * 16)-13;
             const vall = val + "px"
             topBarText[i].style.setProperty('top', vall);
-            topBarText[i].style.setProperty('right', '16px');
+            topBarText[i].style.setProperty('right', '40px');
             console.log(topBarText[i].style.right);
             }
       } else if (window.outerWidth <= 424) {
@@ -49,12 +49,34 @@ function adjustStyles(){
           mainTextButton.style.setProperty('left', '15%');
           mainText.style.setProperty('left', '8%');
           mainText.style.setProperty('top', '44%');
+        topBarBackground.style.setProperty('width', '34%');
+        topBarId3.style.setProperty('width', '28%');
+        for (let i = 0; i < topBarText.length; i++) {
+           topBarText[i].style.setProperty('position', 'absolute');
+          topBarText[i].style.setProperty('font-size', '20px');
+          const val = ((i + 1) * 18)-18;
+          const vall = val + "px"
+          topBarText[i].style.setProperty('top', vall);
+          topBarText[i].style.setProperty('right', '54px');
+          console.log(topBarText[i].style.right);
+          }
       } else if (window.outerWidth <= 474) {
           mainText.style.setProperty('font-size', "64px");
           mainTextButton.style.setProperty('font-size', "54px");
           mainTextButton.style.setProperty('left', '19%');
           mainText.style.setProperty('left', '10%');
           mainText.style.setProperty('top', '42%');
+        topBarBackground.style.setProperty('width', '34%');
+        topBarId3.style.setProperty('width', '28%');
+        for (let i = 0; i < topBarText.length; i++) {
+           topBarText[i].style.setProperty('position', 'absolute');
+          topBarText[i].style.setProperty('font-size', '20px');
+          const val = ((i + 1) * 18)-18;
+          const vall = val + "px"
+          topBarText[i].style.setProperty('top', vall);
+          topBarText[i].style.setProperty('right', '74px');
+          console.log(topBarText[i].style.right);
+          }
       } else if (window.outerWidth <= 769) {
         mainText.style.setProperty('font-size', "74px");
         mainTextButton.style.setProperty('font-size', "54px");
