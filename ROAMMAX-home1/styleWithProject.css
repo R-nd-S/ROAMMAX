@@ -1,0 +1,219 @@
+:root {
+    --latestProject: -16%;
+}
+.section {
+    display: flex;
+}
+#bottomBar {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    /* background-color: #000; */
+}
+#bottomBarLine {
+    position: absolute;
+    top: 0px;
+    left: 2%;
+    width: 96%;
+    height: 2px;
+    background-color: rgb(230, 220, 190);
+}
+.bottomBarButton {
+    position: fixed;
+    height: 10%;
+    width: 20%;
+    top: 92%;
+    translate: -0% -50%;
+    border: 2px solid rgb(230, 220, 190);
+    border-radius: 52px;
+    color: rgb(230, 220, 190);
+    text-align: center;
+    font-size: 500%;
+    overflow: hidden;
+}
+#bottomBarButton1{
+    position: fixed;
+    left: 5%;
+    text-align: center;
+}
+#bottomBarButton2{
+    position: fixed;
+    left: 40%;
+    text-align: center;
+}
+#bottomBarButton3{
+    position: fixed;
+    text-align: center;
+    left: 75%;
+}
+#topBar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    /* background-color: #000;  */
+}
+#topBarLine {
+    position: absolute;
+    bottom: 0px;
+    left: 2%;
+    width: 96%;
+    height: 2px;
+    background-color: rgb(230, 220, 190);
+}
+#topBarLogo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 10%;
+}
+#topBarButton {
+    display: None;
+
+    position: absolute;
+    top: 33%;
+    right: 5%;
+    height: 33%;
+    width: 10%;
+    background-color: #fff;
+    border: 2px solid #dad7d7;
+    border-radius: 2%;
+}
+#center {
+position: absolute;
+top: 16%;
+height: 68%;
+left: 0px;
+width: 100%;
+}
+.Project {
+width:25%;
+height: 29%;
+border: 3px solid;
+border-color: rgb(230, 220, 190);
+z-index: -2;
+}
+.projectTitle {
+    position: absolute;
+    left: 25%;
+    top: 2%;
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: underline;
+}
+.projectDescription {
+    position: absolute;
+    top: 30%;
+    left: 2px;
+    height: 65%;
+    width: 96%;
+    overflow: hidden;
+}
+.projectDate {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    margin: 0%;
+}
+#Project1 {
+    position: absolute;
+    top: 19%;
+    left: 4%;
+}
+#Project2 {
+    position: absolute;
+    top: 19%;
+    left: 36%;
+}
+#Project3 {
+    position: absolute;
+    top: 19%;
+    left: 69%;
+}
+#Project4 {
+    position: absolute;
+    top: 54%;
+    left: 4%;
+}
+#Project5 {
+    position: absolute;
+    top: 54%;
+    left: 36%;
+}
+#Project6 {
+    position: absolute;
+    top: 54%;
+    left: 69%;
+}
+.Project1 {
+    position: absolute;
+    /* top: calc(var(--latestProject) + 35%); */
+    left: 4%;
+}
+.Project2 {
+    position: absolute;
+    /* top: calc(var(--latestProject) + 35%); */
+    left: 36%;
+}
+.Project3 {
+    position: absolute;
+    /* top: calc(var(--latestProject) + 35%); */
+    left: 69%;
+}
+.blank1 {
+    position: absolute;
+    height: 29%;
+    width: 25%;
+    left: 4%;
+    background-color: white;
+}
+.blank2 {
+    position: absolute;
+    height: 29%;
+    width: 25%;
+    left: 36%;
+    background-color: white;
+}
+.blank3 {
+    position: absolute;
+    height: 29%;
+    width: 25%;
+    left: 69%;
+    background-color: white;
+}
+.Draph {
+    position: absolute;
+    width: 98%;
+    height: 10%;
+    left: 1%;
+    border: 3px solid;
+    border-color: rgb(230, 220, 190);
+    z-index: -2;
+}
+.draphTitle {
+    position: absolute;
+    height: 50%;
+    top: 25%;
+    left: 2%;
+    margin: 0%;
+    text-decoration: underline;
+}
+.draphDate {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    margin: 0%;
+}
+.blank {
+    position: absolute;
+    width: 98%;
+    height: 15%;
+    left: 1%;
+    background-color: white;
+}
